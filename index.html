@@ -33,12 +33,24 @@ h1{font-size:2.2rem;color:#fff;margin-bottom:12px}
 .footer a{color:#666;text-decoration:none}
 .cta{display:block;background:linear-gradient(135deg,#6c5ce7,#a29bfe);color:#fff;text-align:center;padding:18px;border-radius:12px;text-decoration:none;font-weight:700;font-size:1.1em;margin:30px 0;transition:transform .2s}
 .cta:hover{transform:scale(1.02)}
+.breakdown{margin:40px 0;padding:30px;background:#0f0f1a;border:1px solid #1e1e3a;border-radius:16px}
+.section-title{text-align:center;font-size:1.6rem;color:#fff;margin-bottom:8px}
+.section-sub{text-align:center;color:#9ca3af;margin-bottom:30px;font-size:1rem}
+.mechanisms{display:grid;gap:20px;margin-bottom:24px}
+.mechanism{background:#111122;border:1px solid #222244;border-radius:10px;padding:24px;position:relative;padding-left:70px}
+.mech-num{position:absolute;left:20px;top:24px;width:36px;height:36px;background:linear-gradient(135deg,#dc2626,#ff6b6b);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
+.mechanism h3{color:#fff;font-size:1.15rem;margin-bottom:8px}
+.mech-what{color:#d1d5db;font-size:0.95rem;margin-bottom:6px;line-height:1.6}
+.mech-source{color:#6b7280;font-size:0.8rem;font-style:italic}
+.takeaway{text-align:center;padding:20px;background:#1a0a0a;border:1px solid #3d1515;border-radius:10px}
+.takeaway p:first-child{color:#ff6b6b;font-size:1.1rem;margin-bottom:6px}
+.takeaway p:last-child{color:#9ca3af;font-size:0.95rem}
 </style>
 </head>
 <body>
 <div class="container">
   <header>
-    <span class="tag">27 Days Until Token Billing</span>
+    <span class="tag">26 Days Until Token Billing</span>
     <h1>AI Coding Costs Exposed</h1>
     <p class="subtitle">Free tools to check your real AI bill. GitHub Copilot, Claude Code, Cursor — the numbers they don't want you to calculate.</p>
   </header>
@@ -65,9 +77,38 @@ h1{font-size:2.2rem;color:#fff;margin-bottom:12px}
   </div>
 
   <div class="urgency">
-    <h3>⚠️ June 1, 2026 — The Biggest AI Billing Change Ever</h3>
-    <p>GitHub Copilot moves to token billing. Free models eliminated. Annual plans retired. Multiplier shock (15-27x on some models). Your $10/mo becomes $30-80+ overnight.</p>
+    <h3>⚠️ Double Cliff: May 31 + June 1</h3>
+    <p><strong>May 31:</strong> DeepSeek promo rates expire — workarounds that saved 17x suddenly cost 2x more. <strong>June 1:</strong> GitHub Copilot token billing goes live. Free models eliminated. Annual plans retired. Multiplier shock (15-27x on some models). Only flat-rate survives both cliffs.</p>
   </div>
+
+  <section class="breakdown">
+    <h2 class="section-title">🔥 Three Ways Your Bill Goes Up — Without The Price Changing</h2>
+    <p class="section-sub">The price tag stays the same. Your bill doesn't. Here's how.</p>
+    <div class="mechanisms">
+      <div class="mechanism">
+        <span class="mech-num">1</span>
+        <h3>Cost Doubling</h3>
+        <p class="mech-what">Anthropic quietly doubled Claude Code cost estimates from <strong>$6/day → $13/day</strong> (+117%). No announcement. Just an updated doc.</p>
+        <p class="mech-source">Source: Business Insider, April 29, 2026</p>
+      </div>
+      <div class="mechanism">
+        <span class="mech-num">2</span>
+        <h3>Token Inflation</h3>
+        <p class="mech-what">Claude Code v2.1.100+ silently appends <strong>~20K extra tokens</strong> to every request. Your usage looks 40% higher. Your code didn't change — the meter did.</p>
+        <p class="mech-source">Source: findskill.ai, May 3, 2026 · Still unpatched in v2.1.126</p>
+      </div>
+      <div class="mechanism">
+        <span class="mech-num">3</span>
+        <h3>Tokenizer Stealth Inflation</h3>
+        <p class="mech-what">Opus 4.7 ships a <strong>new 2026 tokenizer</strong> that generates ~35% more tokens for the same raw text. Same code. Same output. More tokens billed.</p>
+        <p class="mech-source">Source: findskill.ai, May 4, 2026</p>
+      </div>
+    </div>
+    <div class="takeaway">
+      <p><strong>Three invisible mechanisms. None on the price tag. All on your bill.</strong></p>
+      <p>Flat-rate is the only defense. No tokens. No surprises. No workarounds that expire in 27 days.</p>
+    </div>
+  </section>
 
   <a href="https://openclaw.ai" class="cta">Get flat-rate AI at $97/mo — unlimited tokens, 20+ models →</a>
 
