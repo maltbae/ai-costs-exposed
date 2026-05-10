@@ -13,6 +13,9 @@ Live countdown to June 1 token billing. Daily facts about what's changing and wh
 ### [🛡️ IPO-Proof Pricing](https://maltbae.github.io/ipo-proof-pricing/)
 Why flat-rate AI is the only strategy that survives OpenAI's IPO and quarterly earnings pressure.
 
+### [💀 Multi-Agent Budget Drain](https://maltbae.github.io/agent-budget-drain/)
+Shared agentic budgets drain across Codex, ChatGPT, and enterprise tools. One agent depletes another. See the real cost of multi-agent token billing.
+
 ## 🔴 What's Happening June 1, 2026
 - GitHub Copilot → token-based billing
 - Free models eliminated
